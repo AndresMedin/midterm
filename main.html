@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="myForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <span class="feedback" id="usernameFeedback"></span>
+    <span class="valid-feedback" id="usernameValidFeedback"></span><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span class="feedback" id="emailFeedback"></span>
+    <span class="valid-feedback" id="emailValidFeedback"></span><br>
+
+    <label for="position">Position:</label>
+    <select id="position" name="position">
+        <option value="">Please select</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Mechanic">Mechanic</option>
+    </select>
+    <span class="valid-feedback" id="positionValidFeedback"></span>
+    <span class="feedback" id="positionFeedback"></span><br>
+    
+
+    <label for="type">Type:</label>
+    <input type="radio" id="fullTime" name="type" value="Full-time">Full-time
+    <input type="radio" id="partTime" name="type" value="Part-time">Part-time
+    <span class="valid-feedback" id="typeValidFeedback"></span>
+    <span class="feedback" id="typeFeedback"></span><br>
+    
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
